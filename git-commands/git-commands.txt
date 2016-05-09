@@ -1,0 +1,17 @@
+
+Git commands for working with local / remote repos
+
+1. Git simple workflow:
+    This will add all unversioned files in the working dir
+    git add .
+    For a granular approach use:
+    git add -filename- [replace filename with the file to be added] 
+    
+    git commit -m "your message"
+    git push origin master
+
+
+2. Remove git directory but keep local
+    git rm -r one-of-the-directories
+    git commit -m "Remove duplicated directory"
+    git push origin <your-git-branch> (typically 'master', but not always)
