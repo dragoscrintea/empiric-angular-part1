@@ -1,0 +1,27 @@
+{
+  "name": "empiric-angularlesson-part1",
+  "version": "1.0.0",
+  "description": "Crash course in AngularJS",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragoscrintea/empiric-angular-part1.git"
+  },
+  "keywords": [
+    "AngularJS"
+  ],
+  "author": "Dragos Crintea",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dragoscrintea/empiric-angular-part1/issues"
+  },
+  "homepage": "https://github.com/dragoscrintea/empiric-angular-part1#readme"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "empiric-angularlesson-part1",
+  "homepage": "https://github.com/dragoscrintea/empiric-angular-part1",
+  "authors": [
+    "Dragos Crintea <dragos.crintea@gmail.com>"
+  ],
+  "description": "Crash course in AngularJS",
+  "main": "index.html",
+  "keywords": [
+    "AngularJS"
+  ],
+  "license": "Apache-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
