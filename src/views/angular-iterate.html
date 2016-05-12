@@ -1,0 +1,36 @@
+ <div class="row" ng-controller="DashboardController">
+    <div clas="col-md-12">
+        
+        <input type="text" ng-model="filterText" placeholder="Filter on: " />
+        <br />
+        <br />
+        <table class="table">
+            <tr>
+                <th>Title</th>
+                <th>Length (min)</th>
+                <th>Rating</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="movie in model.movies | filter:filterText">
+                <td> {{ movie.title }}</td>
+                <td> {{ movie.length }}</td>
+                <td>
+                     <div star-rating rating-value="movie.rating" max="5" 
+                </td>
+                <td>
+                    <button class="btn btn-default" ng-click="model.upRating(movie)">
+                        <span class="glypicon glyphicon-plus"></span>
+                    </button>
+                    <button class="btn btn-default" ng-click="model.downRating(movie)">
+                        <span class="glypicon glyphicon-minus"></span>
+                    </button>
+                    <button class="btn btn-default" ng-click="model.goTo(movie.id)">
+                        <span class="glyphicon glyphicon-zoom-in"></span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+
+</div>

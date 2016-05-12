@@ -1,0 +1,70 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <title>Base Template</title>
+
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Data binding</a>
+                </div>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="page-header">One way data binding</h3>
+                    
+                    <div ng-init="oneWay = 'Hello World'"> 
+                        <h3>One way data binding using ng-init: {{ oneWay }}</h3>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="page-header">Two way data binding</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="hide">Hide input:</label>
+                            <input type="checkbox" name="hide" ng-model="isHidden" />
+                        </div>
+                        <div class="col-md-10" ng-hide="isHidden">
+                            <input type="text" placeholder="Your Name:" ng-model="twoWay"/>
+                            <h3>Hello {{ twoWay }} !</h3>
+                            
+                            <button class="btn btn-default" ng-click="twoWay = 'James'">Change Name</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                                
+
+            
+        </div>
+        
+        
+        
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="src/app/app.js"></script>
+    </body>
+    
+</html>
